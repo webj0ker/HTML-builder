@@ -1,7 +1,7 @@
 const readline = require('readline');
 const fs = require('fs');
 
-const myConsole = new console.Console(fs.createWriteStream('./02-write-file/text.txt'));
+const myConsole = new console.Console(fs.createWriteStream('./text.txt'));
 
 const message = {
   greeting: 'Please enter text',
