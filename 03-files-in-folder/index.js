@@ -16,7 +16,7 @@ fs.readdir(dirpath, { withFileTypes: true }, (error, files) => {
 
         if (error) throw error;
 
-        console.log(`${name} - ${extname} - ${(stats.size / 1024).toFixed(3)} kb`);
+        console.log(`${name} - ${extname.substring(1)} - ${(stats.size / 1024).toFixed(3)} kb`);
       });
 
     }
